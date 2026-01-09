@@ -77,13 +77,14 @@
                             </div>
                             <div class="row text-white">
                                 <div class="form-group col-md-6">
-                                    <label for="inputName">Name :</label>
-                                    <input type="Name" name="Name" class="form-control" id="Name" placeholder="Name">
+                                    <label for="inputFirst Name">First Name :</label>
+                                    <input type="First Name" name="First Name" class="form-control" id="First Name"
+                                        placeholder="First Name">
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="inputPlace">Place :</label>
-                                    <input type="Place" name="Place" class="form-control" id="inputPlace"
-                                        placeholder="Place">
+                                    <label for="inputLast Name">Last Name :</label>
+                                    <input type="Last Name" name="Last Name" class="form-control" id="inputLast Name"
+                                        placeholder="Last Name">
                                 </div>
                             </div>
                             <div class="row text-white">
@@ -194,7 +195,7 @@
                                             <option value="Unemployed">Unemployed</option>
                                         </select>
                                     </div>
-                                    <div class="dob" name="Date of Birth">
+                                    <div class="dob">
                                         <label for="Age">Age :</label>
                                         <select name="Age" class="dob">
                                             <option value="Age">Age</option>
@@ -206,32 +207,34 @@
                                             </script>
                                             <option value="99 above">99 above</option>
                                         </select>
-                                        <label class="gray"> Or Date of Birth :</label>
-                                        <select class="dob">
-                                            <option value="">Day</option>
-                                            <script>
-                                                for (var i = 1; i <= 31; i++) {
-                                                    document.write('<option value="' + i + '">' + i + '</option>');
-                                                }
-                                            </script>
-                                        </select>
-                                        <select class="dob">
-                                            <option value="">Month</option>
-                                            <script>
-                                                var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-                                                for (var i = 0; i < month.length; i++) {
-                                                    document.write('<option value="' + month[i] + '">' + month[i] + '</option>');
-                                                }
-                                            </script>
-                                        </select>
-                                        <select class="dob">
-                                            <option value="">Year</option>
-                                            <script>
-                                                for (var i = 2010; i >= 1910; i--) {
-                                                    document.write('<option value="' + i + '">' + i + '</option>');
-                                                }
-                                            </script>
-                                        </select>
+                                        <div>
+                                            <label class="gray"> Or Date of Birth :</label>
+                                            <select class="dob" name="Date of Birth">
+                                                <option value="">Day</option>
+                                                <script>
+                                                    for (var i = 1; i <= 31; i++) {
+                                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                                    }
+                                                </script>
+                                            </select>
+                                            <select class="dob" name="Date of Birth">
+                                                <option value="">Month</option>
+                                                <script>
+                                                    var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                                    for (var i = 0; i < month.length; i++) {
+                                                        document.write('<option value="' + month[i] + '">' + month[i] + '</option>');
+                                                    }
+                                                </script>
+                                            </select>
+                                            <select class="dob" name="Date of Birth">
+                                                <option value="">Year</option>
+                                                <script>
+                                                    for (var i = 2010; i >= 1910; i--) {
+                                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                                    }
+                                                </script>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="Height">
                                         <label for="Height">Height :</label>
@@ -315,7 +318,7 @@
         $("#submit-form").submit((e) => {
             e.preventDefault()
             $.ajax({
-                url: "https://script.google.com/macros/s/AKfycbz1AioLWPoP4nStc9IEMz-wALXZtJf3PUPD3PUsSVtL7V6wgUYPac83moLji50lAX3o/exec",
+                url: "https://script.google.com/macros/s/AKfycbzCyG5kOSxnyi-u9hm81VsIU6eFsQmScHKHBXpplDshl4cYPpHHM8rzDxGwFELbVJTPZg/exec",
                 data: $("#submit-form").serialize(),
                 method: "post",
                 success: function (response) {
