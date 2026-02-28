@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="Image/img 01.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Bureu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        select {
+            padding: 5px;
+            margin: 5px 0;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="bg-info" style="width: 100%; z-index:1;"> <!-- Header -->
+        <div class="row text-white p-4">
+            <div class="col-md-9 col-9">
+                <h1 style="font-size: -webkit-xxx-large;font-family: initial">Aboo's Marriege Bureu</h1>
+                <!-- Title Name -->
+            </div>
+            <div class="col-md-3 col-3">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white" aria-current="page"
+                                        href="https://www.aboothaheer.in/">Home</a> <!--  -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://wa.me/+917356348133">Website</a>
+                                    <!--  -->
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-white" href="https://wa.me/+917356348133">Pan Card</a>
+                                    <!--  -->
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="p-1"
+        style="background-image: url(Image/Marriege.png); background-size: cover; background-position: center;">
+        <div class="">
+            <div class="container">
+                <h1 class="text-center text-white">Registration Now</h1> <!-- For Title Name -->
+                <div class="row">
+                    <div class="col-12">
+                        <form id="submit-form" action="" enctype="application/x-www-form-urlencoded">
+                            <div class="row text-white"> <!-- For Form in Informer -->
+                                <div class="form-group col-md-6">
+                                    <label>Informer :</label>
+                                    <input type="radio" id="Self" name="Informer" value="Self">
+                                    <label for="html">Self</label>
+                                    <input type="radio" id="My Son" name="Informer" value="My Son">
+                                    <label for="html">Father</label>
+                                    <input type="radio" id="My Dughter" name="Informer" value="My Dughter">
+                                    <label for="html">Mather</label>
+                                    <input type="radio" id="Releative" name="Informer" value="Releative">
+                                    <label for="html">Releative</label>
+                                    <input type="radio" id="Other" name="Informer" value="Other">
+                                    <label for="html">Other</label>
+                                </div>
+                            </div>
+                            <div class="row text-white"> <!-- For Form in Gender -->
+                                <div class="form-group col-md-6">
+                                    <label>Gender :</label>
+                                    <input type="radio" id="Male" name="Gender" value="Male">
+                                    <label for="html">Male</label>
+                                    <input type="radio" id="Female" name="Gender" value="Female">
+                                    <label for="html">Female</label>
+                                </div>
+                            </div>
+                            <div class="row text-white">
+                                <div class="form-group col-md-6"> <!-- For Form in First Name -->
+                                    <label for="inputFirst Name">First Name :</label>
+                                    <input type="First Name" name="First Name" class="form-control" id="First Name"
+                                        placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6"> <!-- For Form in Last Name -->
+                                    <label for="inputLast Name">Last Name :</label>
+                                    <input type="Last Name" name="Last Name" class="form-control" id="inputLast Name"
+                                        placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="row text-white">
+                                <div class="form-group col-md-6"> <!-- For Form in Email -->
+                                    <label for="Email">Email :</label>
+                                    <input type="email" name="Email" class="form-control" id="inputEmail"
+                                        placeholder="Email">
+                                </div>
+                                <div class="form-group col-md-6"> <!-- For Form in Contact Number -->
+                                    <label for="inputContactNumber">Contact Number :</label>
+                                    <input type="tel" name="Contact Number" class="form-control" id="inputContactNumber"
+                                        placeholder="Contact Number">
+                                </div>
+                            </div>
+                            <div class="row align-items-center">
+                                <div class="col-md-6 p-5"> <!-- FOR Form in Details -->
+                                    <div class="status"> <!-- FOR Form in Marriegge Status Dropdown -->
+                                        <label>Marriegge Status :</label><br>
+                                        <input type="radio" id="Unmarriede" name="Status" value="Unmarriede">
+                                        <label for="html">Unmarriede</label>
+                                        <input type="radio" id="widow/widower" name="Status" value="widow/widower">
+                                        <label for="html">widow/widower</label><br>
+                                        <input type="radio" id="A Waiting Divorce" name="Status"
+                                            value="A Waiting Divorce">
+                                        <label for="html">A Waiting Divorce</label>
+                                        <input type="radio" id="Divorced" name="Status" value="Divorced">
+                                        <label for="html">Divorced</label><br>
+                                        <input type="radio" id="With Children" name="Status" value="With Children">
+                                        <label for="html">With Children</label>
+                                        <input type="radio" id="Without Children" name="Status"
+                                            value="Without Children">
+                                        <label for="html">Without Children</label>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Country Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Country">Country</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select id="country">
+                                                <option value="">-- Select Country --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in State Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="State">State</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select id="state" name="State" disabled>
+                                                <option value="">-- Select State --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in District Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="District">District</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select id="district" name="District" disabled>
+                                                <option value="">-- Select District --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Religion Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Email">Religion</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select id="country">
+                                                <option value="">-- Select Country --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Caste Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Caste">Caste</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select id="state" name="State" disabled>
+                                                <option value="">-- Select State --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Star Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Star">Star</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select id="district" name="District" disabled>
+                                                <option value="">-- Select District --</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Family Status Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Family Status">Family Status</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Family Status" id="Family Status">
+                                                <option value="">Choose</option>
+                                                <option value="Very Upper class">Very Upper class</option>
+                                                <option value="Upper class">Upper class</option>
+                                                <option value="Middle Class">Middle Class</option>
+                                                <option value="Low Class">Low Class</option>
+                                                <option value="Very Low">Very Low</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Complexion/Colour Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Complexion/Colour">Complexion/Colour</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Complexion/Colour" id="Complexion/Colour">
+                                                <option value="">Choose</option>
+                                                <option value="Very Fair">Very Fair</option>
+                                                <option value="Fair">Fair</option>
+                                                <option value="Wheatish">Wheatish</option>
+                                                <option value="Medium">Medium</option>
+                                                <option value="Black">Black</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Body Type Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Body Type">Body Type</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Body Type" id="Body Type">
+                                                <option value="">Choose</option>
+                                                <option value="Average">Average</option>
+                                                <option value="Slim">Slim</option>
+                                                <option value="Athletic">Athletic</option>
+                                                <option value="Heavy">Heavy</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Jathakam Type Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Jathakam Type">Jathakam Type</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Jathakam Type" id="Jathakam Type">
+                                                <option value="">Choose</option>
+                                                <option value="Sudham">Sudham</option>
+                                                <option value="Chowa in 7th">Chowa in 7th</option>
+                                                <option value="Chowa in 8th">Chowa in 8th</option>
+                                                <option value="Other papam">Other papam</option>
+                                                <option value="Normal">Normal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Job Title Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Star">Job Title</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Job" id="Job">
+                                                <option value="">Choose</option>
+                                                <option value="Govt">Govenment</option>
+                                                <option value="Business">Business</option>
+                                                <option value="Abbrod">Abbrod</option>
+                                                <option value="P V T Job">Private Job</option>
+                                                <option value="Self">Self</option>
+                                                <option value="Unemployed">Unemployed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Age Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Age">Age</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Age" class="dob">
+                                                <option value="Age">Age</option>
+                                                <option value="18 below">18 below</option>
+                                                <script>
+                                                    for (var i = 18; i <= 99; i++) {
+                                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                                    }
+                                                </script>
+                                                <option value="99 above">99 above</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Date of Birth Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label class="gray"> Or Date of Birth</label>
+                                        </div>
+                                        <div style="width: 10%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 15%;" class="text-white">            <!-- For Form in Date of Birth Dropdown -->
+                                            <select class="dob" name="Date of Birth">
+                                                <option value="">Day</option>
+                                                <script>
+                                                    for (var i = 1; i <= 31; i++) {
+                                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                                    }
+                                                </script>
+                                            </select>
+                                        </div>
+                                        <div style="width: 15%;" class="text-white">            <!-- For Form in Month of Birth Dropdown -->
+                                            <select class="dob" name="Date of Birth">
+                                                <option value="">Month</option>
+                                                <script>
+                                                    var month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+                                                    for (var i = 0; i < month.length; i++) {
+                                                        document.write('<option value="' + month[i] + '">' + month[i] + '</option>');
+                                                    }
+                                                </script>
+                                            </select>
+                                        </div>
+                                        <div style="width: 15%;" class="text-white">        <!-- For Form in Year of Birth Dropdown -->
+                                            <select class="dob" name="Date of Birth">
+                                                <option value="">Year</option>
+                                                <script>
+                                                    for (var i = 2010; i >= 1910; i--) {
+                                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                                    }
+                                                </script>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Height Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Height">Height</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Height" class="height">
+                                                <option value="Height">Height</option>
+                                                <option value="100 Cm below">100 Cm below</option>
+                                                <script>
+                                                    for (var i = 100; i <= 200; i++) {
+                                                        document.write('<option value="' + i, " Cm" + '">' + i, " Cm" + '</option>');
+                                                    }
+                                                </script>
+                                                <option value="200 Cm above">200 Cm above</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Weight Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Weight">Weight</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <select name="Weight" class="Weight">
+                                                <option value="Weight">Weight</option>
+                                                <option value="40 Kg below">40 Kg below</option>
+                                                <script>
+                                                    for (var i = 40; i <= 150; i++) {
+                                                        document.write('<option value="' + i, " Kg" + '">' + i, " Kg" + '</option>');
+                                                    }
+                                                </script>
+                                                <option value="150 Kg above">150 Kg above</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Qulificatoin Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="Qulificatoin">Qulificatoin</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <input type="Qulificatoin" name="Qulificatoin" class="form-control"
+                                                id="inputQulificatoin" placeholder="Qulificatoin">
+                                        </div>
+                                    </div>
+                                    <div class="row"> <!-- For Form in Occupion/Job Dropdown -->
+                                        <div style="width: 40%;" class="text-white">
+                                            <label for="inputContactNumber">Occupion/Job</label>
+                                        </div>
+                                        <div style="width: 20%;" class="text-white">
+                                            <label for="Country">:</label>
+                                        </div>
+                                        <div style="width: 40%;" class="text-white">
+                                            <input type="Occupion/Job" name="Occupion/Job" class="form-control"
+                                                id="inputOccupion/Job" placeholder="Occupion/Job">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6"> <!-- FOR Form in Suggest -->
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="inputmessage">Demand :</label>
+                                            <textarea class="form-control" name="Demand" cols="30" rows="10"
+                                                placeholder="Please Type Your Demand (Place,Caste,Qulificatoin,Job Title,Marriege Status,Age and Extra..) Message Here......."></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center p-2"> <!-- FOR -->
+                                <button type="submit" class="btn btn-success" value="submit"
+                                    style="width:75%">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-info"> <!--  -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center p-2 text-white"> <!--  -->
+                    <h6>Copyright &copy; 2025 Aboothaheer. All rights reserved</h6> <!--  -->
+                    <a class="fa-brands fa-whatsapp" href="https://wa.me/+917356348133"></a> <!--  -->
+                    <a class="fa-brands fa-facebook-f" href="https://www.facebook.com/share/1AhEn6tPoz/"></a>
+                    <!--  -->
+                    <a class="fa-brands fa-instagram"
+                        href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=2ptq5z4"></a><!--  -->
+                    <a class="fa-brands fa-facebook-messenger" href="https://m.me/reehahtooba.mass">
+                        <!--  -->
+                        <a class="fa-brands fa-telegram" href="https://t.me/+rZZFY5Ibflc2YzFl"></a>
+                        <!--  -->
+                        <a class="fa-brands fa-youtube"
+                            href="https://youtube.com/@aboostimepass?si=-XGqkJsPqT7KjH8k"></a> <!--  -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="Script/Bureau.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="Form.js"></script>
+</body>
+
+</html>
